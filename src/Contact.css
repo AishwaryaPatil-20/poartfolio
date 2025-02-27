@@ -1,0 +1,121 @@
+.contact {
+    width: 100%;
+    height: 700px;
+    margin-top: 12px;
+    background: linear-gradient(180deg, #9c6DB0, #233A4E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+
+.contact .bannar {
+    width: 45%;
+    height: 80%;
+    margin-top: 12px;
+    background: url('assets/undraw_mobile_content_xvgr.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact form {
+    width: 50%;
+    max-width: 550px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.6); /* Transparent white background */
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    backdrop-filter: blur(8px); /* Applies the blur effect */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for definition */
+}
+
+.contact form .input-field {
+    width: 100%;
+}
+
+.contact form .input-field label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact form .input-field input,
+.contact form .input-field textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent input background */
+}
+
+.contact form .input-field input:focus,
+.contact form .input-field textarea:focus {
+    border: 2px solid #5c6bc0;
+    box-shadow: 0 0 8px rgba(92, 107, 192, 0.3);
+}
+
+.contact form .input-field textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact form input[type='submit'] {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background: #5c6bc0;
+    outline: none;
+    border: 2px solid #5c6bc0;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.contact form input[type='submit']:hover {
+    background: #4e5e8b;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .contact .bannar {
+        width: 100%; 
+        height: 250px; 
+        margin: 20px 0; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .contact form {
+        width: 100%;
+        max-width: 100%;
+        padding: 25px;
+    }
+}

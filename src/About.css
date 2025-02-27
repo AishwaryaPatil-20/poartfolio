@@ -1,0 +1,109 @@
+.About {
+    width: 100%;
+    height: 730px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    color: black;
+    margin: 10px 0;
+    background-color: #A1D6E2;
+}
+
+.banner,
+.About.img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.About .banner {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    color: black;
+    text-align: left; 
+    gap: 10px;
+    padding: 0px 70px 0px 4%;
+}
+
+.About .banner h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #303074;
+    margin-bottom: 1px;
+}
+
+
+.About .banner h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #303074;
+    font-family: Teko, sans-serif;
+    margin: 10px 0;
+}
+
+.About .banner p {
+    font-size: 18px;
+    font-family: Teko, sans-serif;
+    margin: 20px 0;
+    padding: 10px 15px; /* Adjusted padding for better spacing */
+}
+
+.About .banner p span {
+    color: blueviolet;
+    font-family: Teko, sans-serif;
+}
+
+.About  .banner .Resume {
+    padding: 12px 35px;
+    background-color: #1995AD;
+    color: #A1D6E2;
+    font-size: 16px;
+    font-family: Teko, sans-serif;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: flex-start; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.About .banner .Resume:hover {
+    color: #1995AD;
+    background-color: aqua;
+}
+
+.About .img {
+    width: 320px;
+    height: 390px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: url('assets/Aishwarya photo1.jpeg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin: auto 49px;
+}
+
+
+@media (max-width: 768px) {
+    .About{
+        flex-direction: column;
+        height: auto;
+    }
+    
+
+    .About .banner,
+    .About .img {
+        margin: 20px;
+        width: 100%;
+        text-align: center; 
+    }
+
+    .About .img {
+        width: 320px;
+        height: 390px;
+    }
+}

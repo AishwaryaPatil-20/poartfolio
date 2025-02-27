@@ -1,0 +1,143 @@
+.service{
+  width: 100%;
+  height:700px ; 
+  margin: 12px 0px;
+  background: linear-gradient(136deg, #9c6DB0, #233A4E);
+}
+.service h2{
+  padding-top:20px ;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 28px;
+  color: aliceblue;
+}
+.cards {
+  margin: 12px 11%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  gap: 17px;
+}
+
+.service .cards .box {
+  position: relative;
+    width: 320px;
+    background: aliceblue;
+    padding: 20px 20px;
+    box-shadow: 1px 5px 10px blue;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.service .box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: #1995AD;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.service .box:hover:before {
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.service .cards .box .image {
+  width: 230px;
+  height: 150px;
+  margin-bottom: 10px;
+  background: url('1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.service .cards .box .image1 {
+  width: 230px;
+  height: 150px;
+  margin-bottom: 10px;
+  background: url('2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.service .box p {
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+  text-align: start;
+  color: #333333;
+  transition: 0.5s;
+  font-family: Oswald;
+}
+
+.service .box p b {
+  font-size: 20px;
+}
+
+.service .box:hover h2,
+.service .box:hover p,
+.service .box:hover p1 {
+  color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .cards {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .service .cards .box {
+    width: 45%; /* Adjust width for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .service {
+    height: auto; /* Ensure the container height adjusts based on content */
+  }
+
+  .service .cards .box {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .cards {
+    gap: 15px; /* Adjust gap between cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .service {
+    height: auto; /* Ensure the container height adjusts based on content */
+    padding: 20px 10px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .service .cards .box {
+    width: 100%;
+    padding: 15px; /* Adjust padding for small screens */
+  }
+
+  .service .box .image {
+    width: 100%;
+    height: auto; /* Allow the image to be responsive */
+  }
+
+  .service .box p {
+    font-size: 16px;
+  }
+}
