@@ -53,7 +53,7 @@
   width: 230px;
   height: 150px;
   margin-bottom: 10px;
-  background: url('1.png');
+  background: url('assets/1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -63,7 +63,7 @@
   width: 230px;
   height: 150px;
   margin-bottom: 10px;
-  background: url('2.png');
+  background: url('assets/2.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
