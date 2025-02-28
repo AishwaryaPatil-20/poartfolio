@@ -82,7 +82,7 @@ export default function Skill() {
 
                     </div>
                     <div className="box">
-                        <h2>Profisinal skills</h2>
+                        <h2>Professional Skills</h2>
                         <div className="radial-bars">
 
                             <div className="radial-bar">
